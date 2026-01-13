@@ -1,9 +1,9 @@
-# 🚀 Notion ↔ Trello Two-Way Sync
+# Notion ↔ Trello Two-Way Sync
 
 A reliable automation system that keeps Notion leads and Trello tasks in a continuous two-way sync.
 Built in Python using real, multiple REST APIs.
 
-# 📌 Overview
+# Overview
 
 - Lead Tracker: Notion database
 - Work Tracker: Trello board
@@ -14,7 +14,7 @@ Built in Python using real, multiple REST APIs.
 - Uses timestamp comparison + small grace window
 - Includes error handling, retry logic, logging
 
-# 🏗 Architecture
+# Architecture
 
 Notion Leads  <------>  sync_logic.py  <------>  Trello Tasks
                         |                      
@@ -27,7 +27,7 @@ Notion Leads  <------>  sync_logic.py  <------>  Trello Tasks
 | Lost          | Lost        |
 
 
-# 📁 Project Structure
+# Project Structure
 
 - notion_client.py
 - trello_client.py
@@ -36,7 +36,7 @@ Notion Leads  <------>  sync_logic.py  <------>  Trello Tasks
 - .env.example
 - requirements.txt
 
-# 🔧 Setup
+# Setup
 
 ## 1️⃣ Clone
 git clone https://github.com/surryaansh/automation-two-way-sync-suryansh-singh
@@ -82,20 +82,20 @@ Sync done.
 
 ### Idempotent: running sync repeatedly does not duplicate cards.
 
-# ⚙️ Error Handling & Idempotency
+# Error Handling & Idempotency
 
 - safe_request() retry wrapper prevents crashes
 - Duplicate prevention using TrelloCardID stored in Notion
 - Grace window avoids false conflicts
 - Timestamp comparison decides which system is newer
 
-# 🧪 Assumptions & Limitations
+# Assumptions & Limitations
 
 - Polling-based (no webhooks)
 - Limited to main statuses
 - Small timestamp differences possible between tools
 
-# 🤖 AI Usage Notes
+# AI Usage Notes
 Used ChatGPT for:
 
 - Mostly used for understanding how and where to find API + secret + token keys for Trello.
