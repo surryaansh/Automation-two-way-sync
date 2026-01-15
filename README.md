@@ -104,5 +104,5 @@ Used ChatGPT for:
 - Understanding timestamp loopholes and fixing errors
 - Drafting README structure
 
-One suggestion I rejected: AI proposed using a webhook architecture; I simplified to polling to keep the implementation clear and aligned with assignment scope.
+One suggestion I rejected: AI proposed using a webhook architecture; I simplified to polling to keep the implementation clear.
 
