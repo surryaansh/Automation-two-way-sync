@@ -96,7 +96,7 @@ Sync done.
 - Small timestamp differences possible between tools
 
 # AI Usage Notes
-Used ChatGPT for-
+Used ChatGPT for:
 
 - Mostly used for understanding how and where to find API + secret + token keys for Trello.
 - To find List IDs by adding .json at the URL end
